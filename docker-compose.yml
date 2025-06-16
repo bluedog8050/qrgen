@@ -3,6 +3,5 @@ services:
     build :
       context: .
       dockerfile: Dockerfile
-    image: nginx:latest
     volumes:
       - ./:/usr/share/nginx/html/
