@@ -1,7 +1,5 @@
 services:
-  nginx:
-    build :
-      context: .
-      dockerfile: Dockerfile
+  httpd:
+    image: httpd:latest
     volumes:
-      - ./:/usr/share/nginx/html/
+      - ./website:/usr/local/apache2/htdocs/
